@@ -1,0 +1,2320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>ArrayUtil - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ArrayUtil.html">ArrayUtil</a><ul class='methods'><li data-type='method'><a href="ArrayUtil.html#.complement">complement</a></li><li data-type='method'><a href="ArrayUtil.html#.contains">contains</a></li><li data-type='method'><a href="ArrayUtil.html#.defaultIfEmpty">defaultIfEmpty</a></li><li data-type='method'><a href="ArrayUtil.html#.hasNull">hasNull</a></li><li data-type='method'><a href="ArrayUtil.html#.hasUndefined">hasUndefined</a></li><li data-type='method'><a href="ArrayUtil.html#.intersect">intersect</a></li><li data-type='method'><a href="ArrayUtil.html#.isEmpty">isEmpty</a></li><li data-type='method'><a href="ArrayUtil.html#.isNotEmpty">isNotEmpty</a></li><li data-type='method'><a href="ArrayUtil.html#.minus">minus</a></li><li data-type='method'><a href="ArrayUtil.html#.remove">remove</a></li><li data-type='method'><a href="ArrayUtil.html#.removeOne">removeOne</a></li><li data-type='method'><a href="ArrayUtil.html#.unique">unique</a></li><li data-type='method'><a href="ArrayUtil.html#.uniquelize">uniquelize</a></li></ul></li><li><a href="Base64.html">Base64</a><ul class='methods'><li data-type='method'><a href="Base64.html#.decodeStr">decodeStr</a></li><li data-type='method'><a href="Base64.html#.encodeStr">encodeStr</a></li></ul></li><li><a href="BufferUtil.html">BufferUtil</a><ul class='methods'><li data-type='method'><a href="BufferUtil.html#.bufferToStream">bufferToStream</a></li><li data-type='method'><a href="BufferUtil.html#.streamToBuffer">streamToBuffer</a></li></ul></li><li><a href="DatePattern.html">DatePattern</a></li><li><a href="DateUtil.html">DateUtil</a><ul class='methods'><li data-type='method'><a href="DateUtil.html#.dateSecond">dateSecond</a></li><li data-type='method'><a href="DateUtil.html#.dayOfWeek">dayOfWeek</a></li><li data-type='method'><a href="DateUtil.html#.dayOfYear">dayOfYear</a></li><li data-type='method'><a href="DateUtil.html#.format">format</a></li><li data-type='method'><a href="DateUtil.html#.formatChineseDateTime">formatChineseDateTime</a></li><li data-type='method'><a href="DateUtil.html#.formatDate">formatDate</a></li><li data-type='method'><a href="DateUtil.html#.formatDateTime">formatDateTime</a></li><li data-type='method'><a href="DateUtil.html#.formatTime">formatTime</a></li><li data-type='method'><a href="DateUtil.html#.getEndDate">getEndDate</a></li><li data-type='method'><a href="DateUtil.html#.getFirstDayOfMonth">getFirstDayOfMonth</a></li><li data-type='method'><a href="DateUtil.html#.getStartDate">getStartDate</a></li><li data-type='method'><a href="DateUtil.html#.getToDayEndDate">getToDayEndDate</a></li><li data-type='method'><a href="DateUtil.html#.getToDayStartDate">getToDayStartDate</a></li><li data-type='method'><a href="DateUtil.html#.isAM">isAM</a></li><li data-type='method'><a href="DateUtil.html#.isPM">isPM</a></li><li data-type='method'><a href="DateUtil.html#.month">month</a></li><li data-type='method'><a href="DateUtil.html#.nowDate">nowDate</a></li><li data-type='method'><a href="DateUtil.html#.nowDateSecond">nowDateSecond</a></li><li data-type='method'><a href="DateUtil.html#.parse">parse</a></li><li data-type='method'><a href="DateUtil.html#.quarter">quarter</a></li><li data-type='method'><a href="DateUtil.html#.year">year</a></li></ul></li><li><a href="ErrorUtil.html">ErrorUtil</a><ul class='methods'><li data-type='method'><a href="ErrorUtil.html#.getMsg">getMsg</a></li><li data-type='method'><a href="ErrorUtil.html#.getStack">getStack</a></li></ul></li><li><a href="HashUtil.html">HashUtil</a><ul class='methods'><li data-type='method'><a href="HashUtil.html#.fnvHash">fnvHash</a></li><li data-type='method'><a href="HashUtil.html#.hornerHash">hornerHash</a></li></ul></li><li><a href="Ipv4Util.html">Ipv4Util</a><ul class='methods'><li data-type='method'><a href="Ipv4Util.html#.formatIpBlock">formatIpBlock</a></li><li data-type='method'><a href="Ipv4Util.html#.ipv4ToNum">ipv4ToNum</a></li><li data-type='method'><a href="Ipv4Util.html#.isIpv4">isIpv4</a></li><li data-type='method'><a href="Ipv4Util.html#.numToIpv4">numToIpv4</a></li></ul></li><li><a href="MapUtil.html">MapUtil</a><ul class='methods'><li data-type='method'><a href="MapUtil.html#.isEmpty">isEmpty</a></li><li data-type='method'><a href="MapUtil.html#.isNotEmpty">isNotEmpty</a></li><li data-type='method'><a href="MapUtil.html#.mapToObject">mapToObject</a></li><li data-type='method'><a href="MapUtil.html#.objectToMap">objectToMap</a></li></ul></li><li><a href="Md5Util.html">Md5Util</a><ul class='methods'><li data-type='method'><a href="Md5Util.html#.createMd5">createMd5</a></li></ul></li><li><a href="NetUtil.html">NetUtil</a><ul class='methods'><li data-type='method'><a href="NetUtil.html#.getIPV4Address">getIPV4Address</a></li><li data-type='method'><a href="NetUtil.html#.getIPV6Address">getIPV6Address</a></li><li data-type='method'><a href="NetUtil.html#.getMultistageReverseProxyIp">getMultistageReverseProxyIp</a></li><li data-type='method'><a href="NetUtil.html#.isIp">isIp</a></li><li data-type='method'><a href="NetUtil.html#.isIpv4">isIpv4</a></li><li data-type='method'><a href="NetUtil.html#.isIpv6">isIpv6</a></li><li data-type='method'><a href="NetUtil.html#.isUnknown">isUnknown</a></li><li data-type='method'><a href="NetUtil.html#.isUsableLocalPort">isUsableLocalPort</a></li><li data-type='method'><a href="NetUtil.html#.isValidPort">isValidPort</a></li></ul></li><li><a href="ObjectIdUtil.html">ObjectIdUtil</a><ul class='methods'><li data-type='method'><a href="ObjectIdUtil.html#.isValid">isValid</a></li></ul></li><li><a href="ObjectUtil.html">ObjectUtil</a><ul class='methods'><li data-type='method'><a href="ObjectUtil.html#.isEmpty">isEmpty</a></li><li data-type='method'><a href="ObjectUtil.html#.isNotEmpty">isNotEmpty</a></li><li data-type='method'><a href="ObjectUtil.html#.mapToObject">mapToObject</a></li><li data-type='method'><a href="ObjectUtil.html#.objectToMap">objectToMap</a></li></ul></li><li><a href="OSUtil.html">OSUtil</a><ul class='methods'><li data-type='method'><a href="OSUtil.html#.getArch">getArch</a></li><li data-type='method'><a href="OSUtil.html#.getCpus">getCpus</a></li><li data-type='method'><a href="OSUtil.html#.getEOL">getEOL</a></li><li data-type='method'><a href="OSUtil.html#.getFreemem">getFreemem</a></li><li data-type='method'><a href="OSUtil.html#.getHostName">getHostName</a></li><li data-type='method'><a href="OSUtil.html#.getIPV4Address">getIPV4Address</a></li><li data-type='method'><a href="OSUtil.html#.getIPV6Address">getIPV6Address</a></li><li data-type='method'><a href="OSUtil.html#.getPlatform">getPlatform</a></li><li data-type='method'><a href="OSUtil.html#.getTotalmem">getTotalmem</a></li><li data-type='method'><a href="OSUtil.html#.getUptime">getUptime</a></li><li data-type='method'><a href="OSUtil.html#.getUserInfo">getUserInfo</a></li><li data-type='method'><a href="OSUtil.html#.getVersion">getVersion</a></li></ul></li><li><a href="PageUtil.html">PageUtil</a><ul class='methods'><li data-type='method'><a href="PageUtil.html#.rainbow">rainbow</a></li><li data-type='method'><a href="PageUtil.html#.totalPage">totalPage</a></li></ul></li><li><a href="PatternPooL.html">PatternPooL</a></li><li><a href="PhoneUtil.html">PhoneUtil</a><ul class='methods'><li data-type='method'><a href="PhoneUtil.html#.isMobile">isMobile</a></li><li data-type='method'><a href="PhoneUtil.html#.isPhone">isPhone</a></li><li data-type='method'><a href="PhoneUtil.html#.isTel">isTel</a></li></ul></li><li><a href="RandomUtil.html">RandomUtil</a><ul class='methods'><li data-type='method'><a href="RandomUtil.html#.randomEle">randomEle</a></li><li data-type='method'><a href="RandomUtil.html#.randomEnStr">randomEnStr</a></li><li data-type='method'><a href="RandomUtil.html#.randomInt">randomInt</a></li><li data-type='method'><a href="RandomUtil.html#.randomStr">randomStr</a></li></ul></li><li><a href="RandomWeightUtil.html">RandomWeightUtil</a><ul class='methods'><li data-type='method'><a href="RandomWeightUtil.html#add">add</a></li><li data-type='method'><a href="RandomWeightUtil.html#clear">clear</a></li><li data-type='method'><a href="RandomWeightUtil.html#next">next</a></li></ul></li><li><a href="RequestUtil.html">RequestUtil</a><ul class='methods'><li data-type='method'><a href="RequestUtil.html#.getClientIp">getClientIp</a></li><li data-type='method'><a href="RequestUtil.html#.getClientIpByHeaders">getClientIpByHeaders</a></li></ul></li><li><a href="ReUtil.html">ReUtil</a><ul class='methods'><li data-type='method'><a href="ReUtil.html#.test">test</a></li></ul></li><li><a href="Sh1Util.html">Sh1Util</a><ul class='methods'><li data-type='method'><a href="Sh1Util.html#.sh1">sh1</a></li></ul></li><li><a href="Snowflake.html">Snowflake</a><ul class='methods'><li data-type='method'><a href="Snowflake.html#nextId">nextId</a></li></ul></li><li><a href="StreamUtil.html">StreamUtil</a><ul class='methods'><li data-type='method'><a href="StreamUtil.html#.bufferToStream">bufferToStream</a></li></ul></li><li><a href="StringFormatUtil.html">StringFormatUtil</a><ul class='methods'><li data-type='method'><a href="StringFormatUtil.html#.format">format</a></li></ul></li><li><a href="StringUtil.html">StringUtil</a><ul class='methods'><li data-type='method'><a href="StringUtil.html#.hasAllEmpty">hasAllEmpty</a></li><li data-type='method'><a href="StringUtil.html#.hasBlank">hasBlank</a></li><li data-type='method'><a href="StringUtil.html#.hasEmpty">hasEmpty</a></li><li data-type='method'><a href="StringUtil.html#.isAllBlank">isAllBlank</a></li><li data-type='method'><a href="StringUtil.html#.isBlank">isBlank</a></li><li data-type='method'><a href="StringUtil.html#.isEmpty">isEmpty</a></li><li data-type='method'><a href="StringUtil.html#.isNotBlank">isNotBlank</a></li><li data-type='method'><a href="StringUtil.html#.isNotEmpty">isNotEmpty</a></li></ul></li><li><a href="UrlUtil.html">UrlUtil</a><ul class='methods'><li data-type='method'><a href="UrlUtil.html#.queryToObj">queryToObj</a></li></ul></li><li><a href="UUID.html">UUID</a><ul class='methods'><li data-type='method'><a href="UUID.html#.randomUUID">randomUUID</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">ArrayUtil</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        ArrayUtil
+        </h2>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+    
+
+    <h4 class="name" id="ArrayUtil"><span class="type-signature"></span>new ArrayUtil<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>ycx</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".complement"><span class="type-signature">(static) </span>complement<span class="signature">(&hellip;arr)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line221">line 221</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    获取补集 </br> 本方法用于获取各个数组不同项
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".contains"><span class="type-signature">(static) </span>contains<span class="signature">(arr, element)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line75">line 75</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    判断数组是否包含某个元素
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">源数组</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>element</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">被包含的元素</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    是否包含
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".defaultIfEmpty"><span class="type-signature">(static) </span>defaultIfEmpty<span class="signature">(arr, defaultArr)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>ycx</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    给定数组如果为空，返回默认数组对象
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">数组对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>defaultArr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">默认的数组对象</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".hasNull"><span class="type-signature">(static) </span>hasNull<span class="signature">(arr)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line53">line 53</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>ycx
+判断数组中是否包含null</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">被检测的数组</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".hasUndefined"><span class="type-signature">(static) </span>hasUndefined<span class="signature">(arr)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line64">line 64</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>ycx
+判断数组中是否包含 undefined</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">数组列表</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    是否包含
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".intersect"><span class="type-signature">(static) </span>intersect<span class="signature">(&hellip;arr)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line184">line 184</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    获取交集 A∩B <br/>
+集合论:设A，B是两个集合，由 属于集合A且属于集合B的元素所组成 的集合，叫做集合A与集合B的交集
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".isEmpty"><span class="type-signature">(static) </span>isEmpty<span class="signature">(arr)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line17">line 17</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>ycx</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">数组</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    是否为空
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".isNotEmpty"><span class="type-signature">(static) </span>isNotEmpty<span class="signature">(arr)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line27">line 27</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>ycx
+判断数组是否不包含空</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">数组</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".minus"><span class="type-signature">(static) </span>minus<span class="signature">(sourceArr, anotherArr)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line207">line 207</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    获取差集(相对) <br/>
+注:集合论可分为朴素集合论和相对集合论
+集合论:设A，B是两个集合，由 属于集合A但不属于集合B的元素 所组成的集合，叫做集合A与集合B的差集(也就是A减去B中与A相同的元素，)
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>sourceArr</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>anotherArr</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".remove"><span class="type-signature">(static) </span>remove<span class="signature">(arr, element)</span><span class="type-signature"> &rarr; {Array.&lt;*>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line88">line 88</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    移除数组中匹配相同元素
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;*></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>element</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;*></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".removeOne"><span class="type-signature">(static) </span>removeOne<span class="signature">(arr, element)</span><span class="type-signature"> &rarr; {Array.&lt;*>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line99">line 99</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    移除数组中一个匹配的元素
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;*></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">数组</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>element</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">要移除的元素</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;*></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".unique"><span class="type-signature">(static) </span>unique<span class="signature">(arr)</span><span class="type-signature"> &rarr; {Array.&lt;*>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line113">line 113</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    去除数组中重复元素
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;*></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">源数组</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    去重的后的数组
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;*></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".uniquelize"><span class="type-signature">(static) </span>uniquelize<span class="signature">(&hellip;arr)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_ArrayUtil.js.html">array/ArrayUtil.js</a>, <a href="array_ArrayUtil.js.html#line132">line 132</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    合并多个数组并且不重复 <br/>
+注:这是一种比较暴力的方式
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on Thu Jul 01 2021 17:38:06 GMT+0800 (中国标准时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>
